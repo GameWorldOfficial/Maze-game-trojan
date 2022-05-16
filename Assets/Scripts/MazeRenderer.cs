@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -6,11 +6,11 @@ public class MazeRenderer : MonoBehaviour
 {
 
     [SerializeField]
-    [Range(1, 60)]
+    [Range(1, 100)]
     private int width = 10;
 
     [SerializeField]
-    [Range(1, 60)]
+    [Range(1, 100)]
     private int height = 10;
 
     [SerializeField]
@@ -19,21 +19,22 @@ public class MazeRenderer : MonoBehaviour
     [SerializeField]
     private Transform wallPrefab = null;
 
-    [SerializeField]
-    private Transform floorPrefab = null;
-
     // Start is called before the first frame update
     void Start()
     {
         var maze = MazeGenerator.Generate(width, height);
         Draw(maze);
+
+        MeshCombiner meshCombiner = gameObject.AddComponent<MeshCombiner>();
+
+        meshCombiner.CreateMultiMaterialMesh = false;
+        meshCombiner.DestroyCombinedChildren = true;
+
+        meshCombiner.CombineMeshes(true);
     }
 
     private void Draw(WallState[,] maze)
     {
-
-        var floor = Instantiate(floorPrefab, transform);
-        floor.localScale = new Vector3(width, 1, height);
 
         for (int i = 0; i < width; ++i)
         {
@@ -80,12 +81,6 @@ public class MazeRenderer : MonoBehaviour
             }
 
         }
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
 
     }
 }
