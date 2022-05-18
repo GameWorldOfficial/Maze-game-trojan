@@ -97,7 +97,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 112000000, guid: ff74df5219d014345bb911ba878a7a52, type: 2}
+  m_LightingDataAsset: {fileID: 112000000, guid: e857d7c395942a44e9f6b0bad29f0748, type: 2}
   m_LightingSettings: {fileID: 4890085278179872738, guid: 534710abec09ee64fbd9fe8fc2fb9460, type: 2}
 --- !u!196 &4
 NavMeshSettings:
@@ -140,7 +140,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 634900085634603167, guid: c2536af29a86e154f82a0b8789b78493, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -0.75
       objectReference: {fileID: 0}
     - target: {fileID: 634900085634603167, guid: c2536af29a86e154f82a0b8789b78493, type: 3}
       propertyPath: m_LocalPosition.z
@@ -333,7 +333,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1339650313}
   m_LocalRotation: {x: 1, y: -0, z: -0, w: 0.00000058114523}
-  m_LocalPosition: {x: -0.5005, y: 1.5, z: -0.4939}
+  m_LocalPosition: {x: -0.5005, y: 0.75, z: -0.4939}
   m_LocalScale: {x: 5.0257373, y: 4.7957306, z: 5.0238075}
   m_Children: []
   m_Father: {fileID: 0}
@@ -349,7 +349,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1554107182}
   - component: {fileID: 1554107181}
-  - component: {fileID: 1554107183}
   m_Layer: 0
   m_Name: MazeRenderer
   m_TagString: Untagged
@@ -387,20 +386,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!64 &1554107183
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1554107180}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300000, guid: 0e8556cd6add4174aa49387a95f90b2f, type: 2}
 --- !u!1 &1890216999
 GameObject:
   m_ObjectHideFlags: 0
@@ -628,7 +613,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8353518756807351584}
   m_LocalRotation: {x: -0, y: 0.92387974, z: -0, w: 0.3826831}
-  m_LocalPosition: {x: -25.068264, y: 0.5292147, z: 24.06828}
+  m_LocalPosition: {x: -25.068264, y: -0.22078532, z: 24.06828}
   m_LocalScale: {x: 0.5078475, y: 0.5078475, z: 0.5078475}
   m_Children:
   - {fileID: 8353518756807770370}
@@ -927,7 +912,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7498881599865930262}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 24, y: 0.0373, z: -25}
+  m_LocalPosition: {x: 24, y: -0.7127, z: -25}
   m_LocalScale: {x: 1, y: 0.1034, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
