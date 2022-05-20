@@ -6,11 +6,11 @@ public class MazeRenderer : MonoBehaviour
 {
 
     [SerializeField]
-    [Range(1, 100)]
+    [Range(1, 1000)]
     private int width = 10;
 
     [SerializeField]
-    [Range(1, 100)]
+    [Range(1, 1000)]
     private int height = 10;
 
     [SerializeField]
